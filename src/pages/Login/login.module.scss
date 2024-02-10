@@ -1,0 +1,110 @@
+@import "../../styles/variables.scss";
+@import "../../styles/media.scss";
+
+.container {
+  display: flex;
+  align-items: center;
+  padding: 10rem 0;
+  gap: 1rem;
+  flex-direction: column;
+  @include break(xs) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 5rem;
+  }
+  @include break(sm) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 5rem;
+  }
+  @include break(md) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 5rem;
+  }
+
+  .inner {
+    .headingTitle {
+      font-size: 3.2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+    }
+
+    .mainDesc {
+      font-size: 1.8rem;
+      color: $input-grey;
+      font-weight: 600;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      padding: 2.5rem 0;
+
+      .inputWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 35rem;
+        gap: 1rem;
+        label {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: $light-blue;
+        }
+        input {
+          width: 100%;
+          font-size: 1.4rem;
+          font-weight: 700;
+          padding: 1.2rem 2rem;
+          border-radius: 0.5rem;
+          color: $grey-color;
+          border: 1px solid $grey-color;
+          &::placeholder {
+            color: $grey-color;
+          }
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+
+      .loginBtn {
+        width: 100%;
+        text-align: center;
+        padding: 1.4rem 5rem;
+        border-radius: 0.5rem;
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: $white;
+        background-color: $grey-color;
+        box-shadow: $box-shadow-custom;
+        letter-spacing: $spacing;
+        transition: 0.3s all ease;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        &:hover {
+          transform: scaleY(1);
+          background-color: grey;
+        }
+      }
+      .link{
+        font-size: 1.2rem;
+        color: $grey;
+        font-weight: 500;
+        @include break(xs) {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+        @include break(sm) {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+        @include break(md) {
+          font-size: 1.4rem;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

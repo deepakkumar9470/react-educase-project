@@ -1,0 +1,128 @@
+@import "../../styles/variables.scss";
+@import "../../styles/media.scss";
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include break(xs) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  @include break(sm) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  @include break(md) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+  }
+  .main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .headingTitle {
+      font-size: 3.2rem;
+      font-weight: 700;
+      color: $dark;
+      @include break(xs) {
+        font-size: 4rem;
+        text-align: center;
+      }
+      @include break(sm) {
+        font-size: 3.4rem;
+        text-align: center;
+      }
+      @include break(md) {
+        font-size: 3.6rem;
+      }
+    }
+
+    .mainDesc {
+      font-size: 1.8rem;
+      font-weight: 600;
+      color: $grey;
+      @include break(xs) {
+        font-size: 2rem;
+        text-align: center;
+      }
+      @include break(sm) {
+        font-size: 1.8rem;
+        text-align: center;
+      }
+      @include break(md) {
+        font-size: 2rem;
+        text-align: center;
+      }
+    }
+
+    .signupBtn {
+      width: 100%;
+      padding: 1.4rem 5rem;
+      border-radius: 0.5rem;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin-top: 2rem;
+      color: $white;
+      outline: none;
+      border: none;
+      background-color: $dark-purple;
+      box-shadow: $box-shadow-custom;
+      letter-spacing: $spacing;
+      transition: 0.3s all ease;
+      &:hover {
+        transform: scaleY(1);
+        background-color: $light-blue;
+      }
+
+      @include break(xs) {
+        width: 90% !important;
+      }
+      @include break(sm) {
+        width: 60%;
+      }
+      @include break(md) {
+        width: 50%;
+      }
+    }
+
+    .loginBtn {
+      width: 100%;
+      text-align: center;
+      padding: 1.4rem 5rem;
+      border-radius: 0.5rem;
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: $black;
+      letter-spacing: $spacing;
+      outline: none;
+      border: none;
+      background-color: $light-purple;
+      box-shadow: $box-shadow-custom;
+      transition: 0.3s all ease;
+      &:hover {
+        transform: scaleY(1);
+        background-color: $grey-color;
+      }
+      @include break(xs) {
+        width: 90% !important;
+        font-size: 1.4rem;
+      }
+      @include break(sm) {
+        width: 60%;
+        font-size: 1.4rem;
+
+      }
+      @include break(md) {
+        width: 50%;
+      }
+    }
+  }
+}
