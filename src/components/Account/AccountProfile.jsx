@@ -18,7 +18,7 @@ const AccountProfile = () => {
         </div>
 
         <div className={styles.profileTexts}>
-          <h3>Mayyr Doe</h3>
+          <h3>Marry Doe</h3>
           <p>Marry@gmail.com</p>
         </div>
       </div>
