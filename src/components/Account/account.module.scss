@@ -1,24 +1,23 @@
 @import "../../styles/variables.scss";
 @import "../../styles/media.scss";
 
-
 .container {
- display: flex;
- align-items: center;
- gap: 1rem;
- @include break(xs) {
-  width: 100%;
-  margin: 0 auto;
-}
-@include break(sm) {
-  width: 100%;
-  margin: 0 auto;
-}
-@include break(md) {
-  width: 100%;
-  margin: 0 auto;
-}
- flex-direction: column;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  @include break(xs) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  @include break(sm) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  @include break(md) {
+    width: 100%;
+    margin: 0 auto;
+  }
+  flex-direction: column;
   .headingTitle {
     width: 100%;
     font-size: 3.2rem;
@@ -30,83 +29,73 @@
     cursor: pointer;
   }
 
-  .profile{
+  .profile {
+    display: flex;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+    .img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      object-fit: cover;
+      position: relative;
+      cursor: pointer;
+      border: 1px dotted $grey;
+      box-shadow: inset -7px -5px 94px -36px rgba(0, 0, 0, 0.1);
+    }
+    .camera {
+      width: 2rem;
+      height: 2rem;
+      position: absolute;
+      right: 1rem;
+      top: 10%;
+      background-color: $light-blue;
+      border-radius: 50%;
+    }
+    .profileTexts {
       display: flex;
-      gap:1.5rem;
-      padding: 2.5rem 0;
-      .img{
-        width: 8rem;
-        height: 8rem;
-        border-radius: 50%;
-        object-fit: cover;
-        position: relative;
+      flex-direction: column;
+      gap: 0.5rem;
+      cursor: pointer;
+      h3 {
+        font-size: 2.4rem;
+        font-weight: 600;
+        color: $dark;
         cursor: pointer;
-        border: 1px dotted $grey;
-        box-shadow: inset -7px -5px 94px -36px rgba(0,0,0,0.1);
       }
-      .camera{
-        width: 2rem;
-        height: 2rem;
-        position: absolute;
-        right: 1rem;
-        top: 10%;
-        background-color: $light-blue;
-        border-radius: 50%;
-
-      }
-      .profileTexts{
-        display: flex;
-        flex-direction: column;
-        gap: 0.5rem;
+      p {
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $grey;
         cursor: pointer;
-        h3{
-          font-size: 2.4rem;
-          font-weight: 600;
-          color: $dark;
-          cursor: pointer;
-        }
-        p{
-          font-size: 1.6rem;
-          font-weight: 500;
-          color: $grey;
-          cursor: pointer;
-        }
       }
     }
-    .bioPara{
-      max-width: 40rem;
-      width: 100%;
-      text-align: center;
-      text-transform: capitalize;
-      font-size: 1.6rem;
-      font-weight: 600;
-      color: $grey;
-      @include break(xs) {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-      }
-      @include break(sm) {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-      }
-      @include break(md) {
-        font-size: 1.4rem;
-        padding: 1rem 2rem;
-      }
-    }
-
-
-  .signupBtn {
-      width: 100%;
-      text-align: center;
-      padding: 1.2rem 5rem;
-      border-radius: 0.5rem;
+  }
+  .bioPara {
+    max-width: 40rem;
+    width: 100%;
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: $grey;
+    @include break(xs) {
       font-size: 1.4rem;
-      font-weight: 800;
-      color: $white;
-      outline: none;
-      margin-top: 10rem;
-      border: none;
-      background-color: $dark-purple;
+      padding: 1rem 2rem;
+    }
+    @include break(sm) {
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+    }
+    @include break(md) {
+      font-size: 1.4rem;
+      padding: 1rem 2rem;
+    }
+  }
+
+  .hr {
+    width: 100%;
+    margin-top: 1rem;
+    border-top: 0.2rem dashed $input-grey;
   }
 }
