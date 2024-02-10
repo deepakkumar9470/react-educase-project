@@ -36,7 +36,7 @@ const Signup = () => {
           </div>
 
           <div className={styles.inputWrapper}>
-            <input type="text" required />
+            <input type="text" required/>
             <label className={styles.lebeline} htmlFor="company">Company name</label>
           </div>
           <div className={styles.radioWrapper}>

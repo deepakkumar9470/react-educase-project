@@ -33,25 +33,29 @@
     display: flex;
     gap: 1.5rem;
     padding: 2.5rem 0;
-    .img {
-      width: 8rem;
-      height: 8rem;
-      border-radius: 50%;
-      object-fit: cover;
+    .imgWrapper {
       position: relative;
-      cursor: pointer;
-      border: 1px dotted $grey;
-      box-shadow: inset -7px -5px 94px -36px rgba(0, 0, 0, 0.1);
+      .img {
+        width: 8rem;
+        height: 8rem;
+        border-radius: 50%;
+        object-fit: cover;
+        cursor: pointer;
+        border: 1px dotted $grey;
+        box-shadow: inset -7px -5px 94px -36px rgba(0, 0, 0, 0.1);
+      }
+      .camera {
+        width: 2rem;
+        height: 2rem;
+        position: absolute;
+        left: 80%;
+        top: 55%;
+        background-color: $light-blue;
+        border-radius: 50%;
+        cursor: pointer;
+      }
     }
-    .camera {
-      width: 2rem;
-      height: 2rem;
-      position: absolute;
-      right: 1rem;
-      top: 10%;
-      background-color: $light-blue;
-      border-radius: 50%;
-    }
+
     .profileTexts {
       display: flex;
       flex-direction: column;
